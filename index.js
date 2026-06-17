@@ -1,5 +1,5 @@
 'use strict';
-const APP_TAG = 'cron-scheduler-26b428';
+const APP_TAG = 'cron-scheduler-f2e212';
 async function execute() {
   console.log(`[${APP_TAG}] Starting...`);
   const start = Date.now();
